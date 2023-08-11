@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reservar.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Express</title>
+</head>
+<body>
+    <header>
+        <a class="header-link" href="index.html">Menú Principal</a>
+        <img class="header-img" src="./img/logo.png" alt="Logo Repair Express!">
+        <a class="header-text" href="final.html">Repair Express ID</a>
+    </header>
+    <img class="img-pedro" src="./img/Imagen 3.png" alt="Foto de Pedro">
+    <section class="top">
+        <img class="top-img" src="./img/Icon awesome-calendar-check.png" alt="Calendario">
+        <p class="top-text1">Reservar</p>
+        <p class="top-text2">Por favor llena los datos siguientes</p>
+    </section>
+    <section class="bottom">
+        <div class="bottom-left">
+            <p class="bottom-text">¿Qué dispositivo tienes?</p>
+            <div class="bottom-left-imgs">
+                <img class="bottom-flecha" src="./img/flecha-izquierda.png" alt="Flecha Izquierda">
+                <div class="bottom-imgs-grid">
+                    <div class="bottom-img1">
+                        <img class="bottom-left-img1" src="./img/refurb-macbook-air-gold-202002.png" alt="MacBook Air Gold">
+                        <p class="bottom-img-text">Mac</p>
+                    </div>
+                    <div class="bottom-img2">
+                        <div class="bottom-img2-bg">
+                            <img class="bottom-left-img2" src="./img/510px-IPhone_X_vector.svg.png" alt="iPhone">
+                            <p class="bottom-img-text1">IPhone</p>
+                        </div>
+                    </div>
+                    <div class="bottom-img3">
+                        <img class="bottom-left-img3" src="./img/520px-IPad_2017_tablet.png" alt="iPad">
+                        <p class="bottom-img-text">IPad</p>
+                    </div>
+                </div>
+                <img class="bottom-flecha" src="./img/flecha-derecha.png" alt="Flecha Derecha">
+            </div>
+            <div class="bottom-left-info"> 
+                <form action="reserva">
+                    <label for="model" class="bottom-text1">¿Qué modelo tienes?</label><br>
+                    <input  type="text" id="model" class="bottom-left-box1" name="model" placeholder="Iphone X">
+                </form>
+                <img class="bottom-box-img1" src="img/flecha-abajo.png" alt="Flecha Abajo">
+                <form action="reserva">
+                    <label for="numero" class="bottom-text1">Ingresa el número de serial</label><br>
+                    <input  type="text" id="numero" class="bottom-left-box2" name="numero" placeholder="F2MTT6FGHCL8">
+                </form>
+            </div>
+            <div class="bottom">
+            </div>
+        </div>
+        <div class="bottom-center">
+            <p class="bottom-text">¿Qué Servicio Deseas?</p>
+            <div class="bottom-center-imgs">
+                <img class="bottom-flecha" src="./img/flecha-izquierda.png" alt="Flecha Izquierda">
+                <div class="bottom-imgs-grid">
+                    <div class="bottom-img1">
+                        <img class="bottom-center-img1" src="./img/Icon ionic-md-battery-full.png" alt="Icono de Batería">
+                        <p class="bottom-img-text">Batería</p>
+                    </div>
+                    <div class="bottom-img2">
+                        <div class="bottom-img2-bg">
+                            <img class="bottom-center-img2" src="./img/Icon ionic-ios-phone-portrait.png" alt="Icono de Celular">
+                            <p class="bottom-img-text1">Pantalla</p>
+                        </div>
+                    </div>
+                    <div class="bottom-img3">
+                        <img class="bottom-center-img3" src="./img/Icon simple-ifixit.png" alt="Ipad">
+                        <p class="bottom-img-text">Software</p>
+                    </div>
+                </div>
+                <img class="bottom-flecha" src="img/flecha-derecha.png" alt="Flecha Derecha">
+            </div>
+            <div class="bottom-center-info">
+                <form action="reserva">
+                    <label for="address" class="bottom-text1">Dirección</label><br>
+                    <input  type="text" id="address" class="bottom-left-box1" name="address">
+                </form>
+                <img class="bottom-box-img1" src="img/flecha-abajo.png" alt="Flecha Abajo">
+                <form action="reserva">
+                    <label for="date" class="bottom-text1">Fecha de reparación</label><br>
+                    <input  type="date" id="date" class="bottom-left-box1" name="date" placeholder="aa/mm/yyyy">
+            </div>
+        </div>
+        <div class="bottom-right">
+            <a class="bottom-right-link" href="pago.html">Continuar</a>
+        </div>
+    </section>
+</body>
+</html>

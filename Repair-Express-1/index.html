@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="styles/popups.css">
+    <title>Repair Express</title>
+</head>
+<body>
+    <!-- POP UP LOGIN -->
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                <label for="btn-modal"><i class='bx bx-exit' style='color:#080808'  ></i></label>
+            </div>
+            <div class="logo-repair"><img src="img/LogoNegro.png" alt=""></div>
+            <div><h4>Por favor ingresa tu Repair Express ID</h3></div>
+            <div>
+                <form class="formulario" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="number-id">Repair Express ID:</label>
+                        <input type="text" id="number-id" name="number-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="password" minlength="8" required />
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <button><a href="#" class="ingresar">Ingresar</a></button>
+                <button class="boton-modal">
+                    <label for="btn-modal-singin">
+                        Registrarse
+                    </label>
+                </button>
+            </div>
+            <hr>
+            <div class="footer">
+                
+                <h6>También puedes utilizar</h6>
+                <div class="icons">
+                    <div><img src="img/Icon ionic-logo-google.svg" alt=""></div>
+                    <div><img src="img/Icon awesome-facebook.svg" alt=""></div>
+                    <div><img src="img/Icon metro-apple.svg" alt=""></div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <!-- POP UP SINGIN -->
+    
+    <input type="checkbox" id="btn-modal-singin">
+    <div class="container-modal-singin">
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                <label for="btn-modal-singin"><i class='bx bx-exit' style='color:#080808'  ></i></label>
+            </div>
+            <div class="logo-repair"><img src="img/LogoNegro.png" alt=""></div>
+            <div><h4>Por favor ingresa los siguientes datos personales</h3></div>
+            <div>
+                <form class="formulario" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="number-id">Correo Electrónico (Este será tu Repair Express ID):</label>
+                        <input type="email" id="email-id" name="email-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="password" minlength="8" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Repetir Contraseña:</label>
+                        <input type="password" id="pass-confir" name="password-confir" minlength="8" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <button><a href="#pup" class="registrarse">Registrarse</a></button>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+
+        <!--BANNER-->
+        <section id="home" class="home">
+            <article class="home_texto">
+                <div class="logo">
+                    <img src="img/LogoNegro.png" alt="">
+                </div>
+                <div class="presentacion">
+                    <p>¿Se dañó la pantalla de tu Iphone? <br> No te procupes, nosotros <br> nos encargaremos de repararlo.</p>
+                    <br>
+                    <p class="letra_pequeña">Solicita ya tu reparación a domicilio por técnicos especializados.</p>
+                </div>
+                <div class="home_hipervinculos">
+                    <div class="hip1">
+                        <button><a href="reservar.html">Reparar ya</a></button>
+                        <div class="icons"><img src="img/Imagen 1.png" alt="dd"></div>
+                    </div>
+                    <div class="hip2">
+                        <!-- <button><a href="login.html"></a></button> -->
+                        <button class="boton-modal">
+                            <label for="btn-modal">
+                                Revisar Servicio
+                            </label>
+                        </button>
+                        <div class="icons"><img src="img/Imagen 2.png" alt="dd"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="home_image">
+                <div class="iphone_roto_container" >
+                    <div class="iphone_roto responsive-image">
+                        <img src="img/iPhoneTransparente.png" alt="Iphone Roto" class="iphone_roto">
+                    </div>
+                    
+                </div>
+            </article>
+        </section>
+
+        <!--SECCION 2-->
+        <section id="steps" class="steps">
+            <div class="texto">
+                <h2>Es tan fácil como contar del 1 al 3</h2>
+                <h5>Nuestro servicio tiene 3 pasos a seguir para obtenerlo</h5>
+            </div>
+            <article >
+                <div class="pasos">
+                    <div>
+                        <div class="img reservar">
+                            <img src="img/Icon awesome-calendar-check-1.png" alt="">
+                        </div>
+                        <h2>Reservar</h2>
+                        <p>Elige el dispositivo que quieres arreglar, asignas el día y te notificamos cuando el técnico asignado llegue a su domicilio.</p>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="img/Icon ionic-ios-cash.png" alt="">
+                        </div>
+                        <h2>Pagar</h2>
+                        <p>La facturación de tu dispositivo se realiza solamente cuando el dispositivo este listo sin líos ni complicaciones.</p>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="img/Icon metro-tools.png" alt="">
+                        </div>
+                        <h2>Reparar</h2>
+                        <p>Se procede a reparar el dispositivo con técnicos especializados con los mejores estpandares de calidad que se pueden encontrar en el mercado.</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button><a href="reservar.html">Solicítala ya</a></button>
+                </div>
+            </article>
+        </section>
+
+        <!--SECCION 3-->
+        <section id="movil" class="movil">
+            <div class="texto">
+                <h2>Técnicos Especializados</h2>
+                <p>Tu dispositivo está en las mejores manos, con criterios de alta calidad <br> y partes originales.</p>
+            </div>
+        </section>
+
+        <!--SECCION 4-->
+        <section id="precios" class="precios">
+            <div class="texto">
+                <h2>Precios competitivos, que te quedarás sorprendido</h2>
+                <h4>Además de utilizar partes originales y mano de obra garantizada, tu reparación tiene un costo de:</h4>
+            </div>
+            <article class="costos">
+                <div>
+                    <h2>Bateria</h2>
+                    <div class="costos-img"><img src="img/Icon ionic-md-battery-full.png" alt=""></div>
+                    <p class="desde">Desde</p>
+                    <h3>$120000 COP*</h3>
+                </div>
+                <div>
+                    <h2>Pantalla</h2>
+                    <div class="costos-img"><img src="img/Icon ionic-ios-phone-portrait.png" alt=""></div>
+                    <p class="desde">Desde</p>
+                    <h3>$250000 COP*</h3>
+                </div>
+                <div>
+                    <h2>Software</h2>
+                    <div class="costos-img"><img src="img/Icon simple-ifixit.png" alt=""></div>
+                    <p class="desde">Desde</p>
+                    <h3>$80000 COP*</h3>
+                </div>
+                
+            </article>
+            <p class="letra_pequeña">*Revisar precios de acuerdo al modelo a reparar. Sujeto a cambios y disponibilidad</p>
+        </section>
+
+        <!--SECCION 5-->
+        <section id="dispositivos" class="dispositivos">
+            <div class="texto">
+                <h2>Dispositivos</h2>
+                <h3>Manejamos los principales dispositivos de Apple""</h3>
+            </div>
+            <article class="mac_devices">
+                <div class="mac">
+                    <div class="device"><img src="img/refurb-macbook-air-gold-202002.png" alt=""></div>
+                    <h3>Mac</h3>
+                </div>
+                <div class="iphone">
+                    <div class="device"><img src="img/510px-IPhone_X_vector.svg.png" alt=""></div>
+                    <h3>Iphone</h3>
+                </div>
+                <div>
+                    <div class="device"><img src="img/520px-IPad_2017_tablet.png" alt=""></div>
+                    <h3>Ipad</h3>
+                </div>
+            </article>
+            <p class="letra_pequeña">*Revisar precios de acuerdo al modelo a reparar. Sujeto a cambios y disponibilidad</p>
+        </section>
+
+        <!--SECCION 6-->
+        <section id="flag" class="flag">
+            <div>
+                <h2>Orgullosamente <span class="yellow">Colom</span><span class="blue">bia</span><span class="red">nos</span></h2>
+            </div>
+            <div class="imagenes">
+                <div class="img"><img src="img/LogoNegro.png" alt=""></div>
+                <div class="img"><img src="img/Flag_of_Colombia.png" alt=""></div>
+            </div>
+            <div class="letra_pequeña">
+                <p>Somos una empresa orgullosamente Colombiana, donde sus orígenes son <br> Santandereanos y nuestras operaciones y técnicos hacen parte de ella</p>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>Uso de cookies</li>
+                <li>Condiciones de uso</li>
+                <li>Ventanas y reembolsos</li>
+                <li>Avisos legales</li>
+                <li>Soporte</li>
+            </ul>
+        </footer>
+    </main>
+    
+</body>
+</html>

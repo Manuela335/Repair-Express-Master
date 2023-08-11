@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/pagos.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Express</title>
+</head>
+<body>
+    <header>
+        <a class="header-link" href="index.html">Menú Principal</a>
+        <img class="header-img" src="img/LogoNegro.png" alt="Logo Repair Express!">
+        <a class="header-text" href="final.html">Repair Express ID</a>
+    </header>
+    <img class="img-pedro" src="./img/Imagen 3.png" alt="Foto de Pedro">
+    <section class="top">
+        <img class="top-img" src="./img/Trazado 86.png" alt="Dolar">
+        <p class="top-text1">Pagar</p>
+        <p class="top-text2">Llena tus datos de facturación. Si ya los tienes registrados en tu Repair Express ID el<br>sistema los ingresará automáticamente.</p>
+    </section>
+    <section class="bottom">
+        <div class="bottom-left">
+            <p class="bottom-text1">Contacto de Facturación</p>
+            <p class="bottom-left-text">Si lo tienes registrado en tu Repair Express ID el sistema<br>los llenará automáticamente</p>
+            <div class="bottom-left-top">
+                <div class="bottom-left-box-suprema">
+                    <form action="pagar">
+                        <label for="name" class="bottom-left-text1">Primer Nombre</label><br>
+                        <input  type="text" id="name" class="bottom-left-top-box1" name="name">
+                    </form>
+                </div>
+                <div class="bottom-left-box-suprema">
+                    <form action="pagar">
+                        <label for="name2" class="bottom-left-text1">Segundo Nombre</label><br>
+                        <input type="text" id="name2" name="name2" class="bottom-left-top-box2">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-left-center">
+                <div class="bottom-left-box-suprema">
+                    <form action="pagar">
+                        <label for="codigo" class="bottom-left-text1">Código del Área</label><br>
+                        <input type="text" id="codigo" name="codigo" class="bottom-left-center-box1" placeholder="xxxxx">
+                    </form>
+                </div>
+                <div class="bottom-left-box-suprema">
+                    <form action="pagar">
+                        <label for="numero" class="bottom-left-text1">Número de Contacto</label><br>
+                        <input type="text" id="numero" name="numero" class="bottom-left-center-box2"> 
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-left-bottom">
+                <div class="bottom-left-box-suprema">
+                    <form action="pagar">
+                        <label for="email" class="bottom-left-text1" id="email">Correo Electrónico</label><br>
+                        <input type="text" id="email" name="email" class="bottom-left-bottom-box1" placeholder="example@gmail.com">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-center">
+            <p class="bottom-text1">Métodos de pago disponibles</p>
+            <div class="bottom-center-imgs">
+                <div class="bottom-center-img1-bg">
+                    <img class="bottom-center-img1" src="img/Icon metro-visa.png" alt="Icono de VISA">
+                </div>
+                <img class="bottom-center-img2" src="img/Icon metro-mastercard.png" alt="Icono MasterCard">
+                <img class="bottom-center-img3" src="img/Icon payment-american-express.png" alt="Icono AmericanExpress">
+            </div>
+            <div class="bottom-center-top">
+                <div class="bottom-center-box-suprema">
+                    <form action="pagar">
+                        <label for="tarjeta" class="bottom-center-text1">Número de Tarjeta</label><br>
+                        <input type="text" id="tarjeta" name="tarjeta" class="bottom-center-top-box1" placeholder="xxxx-xxxx-xxxx-xxxx">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-center-center">
+                <div class="bottom-center-box-suprema">
+                    <form action="pagar">
+                        <label for="cvv" class="bottom-center-text1">CVV</label><br>
+                        <input type="text" id="cvv" name="cvv" class="bottom-center-center-box2" placeholder="xxxxx">
+                    </form>
+                </div>
+                <div class="bottom-center-box-suprema">
+                    <form action="pagar">
+                        <label for="fecha" class="bottom-center-text1" id="fecha">Fecha de Expiración</label><br>
+                        <input type="date" id="fecha" name="fecha" class="bottom-center-center-box2">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-right">
+            <div class="bottom-right-top">
+                <p class="bottom-right-text1">Tu Orden</p>
+                <p class="bottom-right-text2">Viernes Abril 23 del 2021, 6:00 PM</p>
+                <div class="bottom-right-text3-flex">
+                    <p class="bottom-right-text3-1">1x Cambio de Pantalla iPhone X</p>
+                    <p class="bottom-right-text3-2">$600.000 COP</p>
+                </div>
+                <div class="bottom-right-text4-flex">
+                    <div class="bottom-right-text4-flex1">
+                        <p class="bottom-right-text4-1">Subtotal</p>
+                        <p class="bottom-right-text4-2">$486.000 COP</p>
+                    </div>
+                    <div class="bottom-right-text5-flex1">
+                        <p class="bottom-right-text5-1">IVA (19%)</p>
+                        <p class="bottom-right-text5-2">$114.000 COP</p>
+                    </div>
+                </div>
+                <div class="bottom-right-text6-flex">
+                    <p class="bottom-right-text6-1">Total</p>
+                    <p class="bottom-right-text6-2">$600.000 COP</p>
+                </div>
+            </div>
+            <div class="bottom-right-bottom">
+                <p class="bottom-right-bottom-text">Recuerda que el sistema hará una retención del dinero, donde se liberará solamente<br>cuando la reparación este totalmente realizada</p>
+                <a class="bottom-right-bottom-link" href="check.html">Continuar</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

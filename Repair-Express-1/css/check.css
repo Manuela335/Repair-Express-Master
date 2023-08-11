@@ -1,0 +1,183 @@
+
+@font-face {
+    font-family: kollektif;
+    src: url(../font/Kollektif.ttf);
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: kollektif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid #000;
+    margin: 20px 120px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 135px;
+}
+
+.link-img {
+    width: 100px;
+    margin-right: 110px;
+}
+
+.link-text {
+    font-size: 15px;
+}
+
+.pedro {
+    position: relative;
+    left: 927px;
+    bottom: 77px;
+    width: 55px;
+}
+
+.container {
+    position: relative;
+    bottom: 60px;
+}
+
+.container .check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .check .tope-img {
+    text-align: center;
+    width: 35px;
+    margin-top: 5px;
+}
+
+.container .check .texto {
+    font-size: 25px;
+    margin: 10px 0 15px 0;
+}
+
+.container .check .chulo {
+    width: 110px;
+    margin-top: 15px;
+}
+
+.container .check .tope-text {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container .check .texto2 {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.container .check a:hover {
+    background-color: #115ef9;
+}
+
+.container .check a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #0050f5;
+    width: fit-content;
+    border-radius: 20px;
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin-inline: 7vw;
+    }
+
+    .link {
+        font-size: 3.5vw;
+        margin-left: 3vw;
+        margin-right: 5vw;
+    }
+
+    .link-img {
+        width: 15vw;
+        margin-right: 9vw;
+    }
+
+    .link-text {
+        font-size: 3.5vw;
+    }
+
+    .pedro {
+        position: relative;
+        bottom: 9vw;
+        left: 93.5vw;
+    }
+
+    .container {
+        margin-top: 2.5vw;
+    }
+
+    .container .tope-img {
+        width: 7vw;
+    }
+
+    .container .tope-text {
+        font-size: 4.5vw;
+    }
+
+    .container .check .tope-img {
+        text-align: center;
+        width: 10vw;
+        margin-top: 2vw;
+    }
+
+    .container .check .chulo {
+        width: 35vw;
+        margin-top: 2.5vw;
+    }
+
+    .container .check .texto {
+        font-size: 6vw;
+        margin: 1vw 0 1.5vw 0;
+    }
+
+    .container .check .texto1 {
+        font-size: 2.9vw;
+        margin-top: 1vw;
+        line-height: 4vw;
+    }
+
+    .container .check a {
+        font-size: 4.5vw;
+        position: static;
+        padding-inline: 5vw 8vw;
+        margin-inline: auto;
+        margin-top: 4vw;
+        border-radius: 4vw;
+    }
+
+    .texto {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+}

@@ -1,0 +1,906 @@
+@font-face {
+    font-family: "kollet";
+    src: url(../font/Kollektif.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "kollet";
+    list-style: none;
+    text-decoration: none;
+}
+
+/* LOGIN */
+
+.boton-modal label{
+    /* padding: 10px 15px;
+    background-color: #5488a3; */
+    color: #fff;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* .boton-modal label:hover{
+    background-color: #185E83;
+    color: #fff;
+} */
+
+.boton-modal label i:hover{
+    color: #fff;
+}
+
+#modal-login{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(47, 47, 47, 0.8);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.content-modal{
+    width: 500px;
+    max-width: 60%; /* Cambiado para que el pop-up no ocupe toda la pantalla */
+    max-height: 100%; /* Agregado para limitar la altura */
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.content-modal h4{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label,
+.btn-modal label{
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #f1f2f5;
+}
+
+.formulario {
+    display: grid;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 30x;
+    background-color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px
+}
+
+input,
+select{
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+button {
+    width: 60%;
+    height: 45px;
+    padding: 0px 15px;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: #0050f5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Color del hover */
+}
+
+label{
+    margin: 5px 2px;
+}
+
+.footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    margin-top: 20px;
+    border-color: #fbfffb;
+
+}
+
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.footer .icons div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-modal .logo-repair{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-repair img{
+    width: 180px;
+    overflow: hidden;
+}
+
+hr{
+    margin: 25px 20px;
+}
+
+h6{
+    font-size: 15px;
+    color: #999797;
+    font-weight: lighter;
+}
+
+.footer .icons div img{
+    width: 20px;
+}
+
+/* Agrega una clase para la animación de entrada */
+.container-modal.fade-in {
+    animation: fadeInModal 10s ease;
+}
+
+/* Define una clase para la animación */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la clase de animación cuando el checkbox está marcado */
+#btn-modal:checked ~ .container-modal {
+    display: flex;
+    animation: fadeInModal 0.5s ease;
+}
+
+/* SIGN IN */
+
+.boton-modal-singin label{
+    /* padding: 10px 15px;
+    background-color: #5488a3; */
+    color: #fff;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* .boton-modal label:hover{
+    background-color: #185E83;
+    color: #fff;
+} */
+
+.boton-modal-singin label i:hover{
+    color: #fff;
+}
+
+#btn-modal-signin{
+    display: none;
+}
+
+.container-modal-singin{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(47, 47, 47, 0.8);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal-singin:checked ~ .container-modal-singin{
+    display: flex;
+}
+
+.content-modal{
+    width: 500px;
+    max-width: 60%; /* Cambiado para que el pop-up no ocupe toda la pantalla */
+    max-height: 100%; /* Agregado para limitar la altura */
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.content-modal h4{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-modal-singin label,
+.btn-modal label{
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #f1f2f5;
+}
+
+.formulario {
+    display: grid;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 30x;
+    background-color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px
+}
+
+input,
+select{
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+button {
+    width: 60%;
+    height: 45px;
+    padding: 0px 15px;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: #0050f5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Color del hover */
+}
+
+label{
+    margin: 5px 2px;
+}
+
+.footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    margin-top: 20px;
+    border-color: #fbfffb;
+
+}
+
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.footer .icons div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-modal .logo-repair{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-repair img{
+    width: 180px;
+    overflow: hidden;
+}
+
+hr{
+    margin: 25px 20px;
+}
+
+h6{
+    font-size: 15px;
+    color: #999797;
+    font-weight: lighter;
+}
+
+.footer .icons div img{
+    width: 20px;
+}
+
+/* Agrega una clase para la animación de entrada */
+.container-modal-singin.fade-in {
+    animation: fadeInModal 10s ease;
+}
+
+/* Define una clase para la animación */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la clase de animación cuando el checkbox está marcado */
+#btn-modal-.singin:checked ~ .container-modal-singin {
+    display: flex;
+    animation: fadeInModal 0.5s ease;
+}
+
+
+.home {
+    margin-bottom: 65px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
+}
+
+/* Estilos para la segunda columna (imagen) */
+.home_image {
+    display: flex;
+    align-items: flex-end; /* Alinea la imagen en la parte inferior */
+    padding: 0 0px 20px 0; /* Añade padding a la derecha y abajo, ajusta según necesites */
+}
+
+/* Estilos para la imagen en la segunda columna */
+.iphone_roto_container {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    align-items: flex-start; /* Alinea la imagen en la parte inferior */
+    /* Agrega padding en la parte superior */
+}
+
+.iphone_roto.responsive-image {
+    position: relative;
+    width: 85%; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: 100%;
+    padding-bottom: calc(100% * 0.8); /* Establece un padding-bottom proporcional para mantener la relación de aspecto */
+    overflow: hidden;
+}
+
+.iphone_roto.responsive-image img {
+    position: absolute;
+    top: 0;
+    right: 0; /* Alinea la imagen a la derecha */
+    width: 100%;
+    height: 100%;
+     /* Asegura que la imagen cubra todo el espacio */
+}
+
+.home_texto{
+    padding: 90px;
+}
+
+.presentacion{
+    margin: 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.presentacion .letra_pequeña{
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home_hipervinculos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home_hipervinculos .hip1{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.home_hipervinculos .hip2{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+button{
+    cursor: pointer;
+    background-color: #0050f5;
+    border: none;
+    border-radius: 30px;
+    width: 60%;
+    height: 45px;
+}
+
+.home_hipervinculos button{
+    padding: 0px 15px;
+    margin: 15px 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+ .icons{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img{
+    width: 100%;
+}
+
+.home_texto .logo{
+    height: 100px;
+}
+
+.home_texto .logo img{
+    width: 50%;
+    height: 100%;
+}
+
+/* SECCION 2 ESTILOS */
+
+.steps{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps .pasos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pasos h2, .pasos p{
+    text-align: center;
+}
+
+.button{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button{
+    width: 200px;
+}
+
+.texto h2{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.texto h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.pasos h2{
+    margin-bottom: 20px;
+}
+
+.pasos p{
+    font-size: 18px;
+}
+
+.pasos .img{
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pasos img{
+    height: 100%;
+    width: 150px;
+}
+
+.reservar img{
+    height: 100%;
+    width: 100px;
+}
+
+.pasos{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* SECCION 3 */
+
+.movil{
+    height: 100vh;
+    background-image: url(/images/RepairExpress_ResourcesStudents/FZIyxxiPx6APvjtD.full.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movil .texto{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto h2{
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.texto p{
+    font-size: 17px;
+}
+
+/* SECCION 4 */
+
+.precios{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 40px;
+}
+
+.precios div h2{
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.precios div h4{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+
+.precios .costos{
+    margin: 40px;
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.costos .costos-img{
+    height: 200px;
+}
+
+.costos-img img{
+    height: 100%;
+}
+
+.costos h3{
+    margin-top: 2px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.desde{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.texto{
+    margin-bottom: 40px;
+}
+
+.precios .letra_pequeña{
+    font-size: 15px;
+}
+/* SECCION 5 */
+
+.dispositivos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mac_devices{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mac_devices .device{
+    display: flex;
+    align-items: center;
+    height: 55vh;
+    width: 300px;
+}
+
+.device img{
+    width: 100%;
+}
+
+ .iphone .device img{
+    height: 100%;
+}
+
+
+.mac_devices h3{
+    margin: 60px;
+    font-size: 37px;
+}
+
+
+/* SECCION 6 */
+
+.flag{
+    height: 100vh;
+    background-image: url(/images/RepairExpress_ResourcesStudents/Campesinos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flag h2{
+    font-size: 57px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flag span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flag .letra_pequeña{
+    align-items: self-end;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-top: 200px;
+    line-height: 35px;
+}
+
+.flag .imagenes{
+    height: 30%;
+    width: 50vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes img{
+    margin: 0px 10px;
+    padding: 0px 85px;
+    width: 100%;
+}
+
+.yellow{
+    color: #FCD116;
+}
+
+.red{
+    color: #CE1126;
+}
+
+.blue{
+    color: #003893;
+}
+
+
+/* FOOTER */
+
+footer{
+    
+    height: 200px;
+    background-color: #0050f5;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 80px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+    .pasos{
+        display: grid;
+        flex-direction: column;
+    }
+
+
+    .iphone_roto.responsive-image {
+        width: 50%; /* Ocupa el ancho completo en pantallas pequeñas */
+        display: none;
+    }
+
+    /* Otros cambios según las necesidades de tu diseño */
+}
+
+/* Media query para pantallas de 768px o menos */
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    }
+
+    .home_image {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+
+    .home_texto {
+        position: relative;
+        background-image: url('/images/RepairExpress_ResourcesStudents/iPhoneTransparente.png'); /* Ruta a la imagen del iPhone */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .home_texto::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Cambia el valor de opacidad según prefieras */
+    }
+
+    .home_texto .logo {
+        display: none; /* Oculta el logo en pantallas pequeñas */
+    }
+}

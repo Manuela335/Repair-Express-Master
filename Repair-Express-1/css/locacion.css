@@ -1,0 +1,252 @@
+
+@font-face {
+    font-family: kollektif;
+    src: url(../font/Kollektif.ttf);
+}
+
+html {
+    font-size: 62.5px;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16%;
+    font-family: kollektif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+header {
+    display: flex;
+    border-bottom: 0.1vw solid #000;
+    margin: 2vw 12vw 0 12vw;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    margin-left: 10vw;
+    margin-right: 13.5vw;
+    margin-top: 0vw;
+}
+
+.link-img {
+    width: 10vw;
+    margin-right: 11vw;
+}
+
+.link-text {
+    font-size: 1.5vw;
+}
+
+.container {
+    height: 50%;
+}
+
+
+.container .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .perfil .foto {
+    width: 5vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.container .perfil h2 {
+    font-size: 1.5vw;
+    margin: 0 0 0.5vw 0;
+}
+
+.container .perfil .p {
+    font-size: 1vw;
+}
+
+.container .mapa {
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    margin: 0;
+}
+
+.container .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.container .right .tecnico1,
+.container .right .status,
+.container .right .iphone {
+    display: flex;
+    justify-content: center;
+}
+
+.container .mapa .titulo {
+    font-size: 1.5vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.container .mapa .texto {
+    font-size: 1vw;
+    text-align: center;
+    margin: 0 0 1vw 0;
+    line-height: 1vw;
+}
+
+.container .mapa .enlace {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    background-color: #0150f5;
+    padding: 0.8vw;
+    border-radius: 2vw;
+    width: 10vw;
+    text-align: center;
+}
+
+.container .mapa .a2 {
+    position: relative;
+    top: 0.95vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    background-color: #0150f5;
+    padding: 0.8vw;
+    border-radius: 2vw;
+    width: 10vw;
+    text-align: center;
+}
+
+
+.container .mapa .right .servicio-title {
+    position: relative;
+    left: 6vw;
+    bottom: 1vw;
+    font-size: 1.7vw;
+}
+
+.container .mapa .right .iphone {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2vw;
+}
+
+.container .mapa .right .status {
+    display: flex;
+    justify-content: space-around;
+    gap: 4.5vw;
+}
+
+.container .mapa .right .status .text .text1 {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.status-text2 {
+    font-size: 1vw;
+}
+
+.container .mapa .right .img {
+    margin-bottom: 0.3vw;
+}
+
+.container .mapa .right .status {
+    margin: 0 0 1vw 0;
+}
+
+.container .mapa .right .status .text .text2 {
+    font-size: 0.6vw;
+    text-align: end;
+}
+
+.container .mapa .right .status .enlace1 {
+    text-decoration: none;
+    background-color: #f50000;
+    color: white;
+    padding: 0.4VW;
+    border-radius: 1vw;
+    width: 5vw;
+    position: relative;
+    left: 2vw;
+    top: 0.3vw;
+    text-align: center;
+    height: fit-content;
+    font-size: 0.8vw;
+}
+
+.container .mapa .right .iphone {
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.container .mapa .right .iphone .cel {
+    margin: 0 0 0 0.5vw;
+}
+
+.container .mapa .right .iphone .text1 {
+    font-size: 1vw;
+    line-height: 1vw;
+}
+
+.container .mapa .right .tecnico {
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.container .mapa .right .tecnico1 {
+    align-items: center;
+    gap: 1vw;
+}
+
+.container .mapa .right .tecnico1 .text2 {
+    font-size: 1vw;
+    line-height: 1vw;
+}
+
+.container .right .logos {
+    position: relative;
+    left: 7vw;
+}
+
+.container .right .logos .log {
+    color: black;
+    font-size: 2vw;
+}
+
+.container .right .baja {
+    position: relative;
+    left: 18vw;
+    margin-bottom: 1vw;
+    font-size: 0.6vw;
+    text-decoration: none;
+    color: white;
+    background-color: #0150f5;
+    padding: 0.8vw;
+    border-radius: 2vw;
+    width: 6vw;
+    text-align: center;
+}

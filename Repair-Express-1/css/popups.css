@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "kollet";
+    src: url(../font/Kollektif.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "kollet";
+}
+
+body{
+    background-color: "efefef";
+}
+
+/* .boton-modal{
+    padding: 40px;
+    background-color: #fff;
+} */
+
+/* BTN LOGIN */
+
+.boton-modal label{
+    /* padding: 10px 15px;
+    background-color: #5488a3; */
+    color: #fff;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* .boton-modal label:hover{
+    background-color: #185E83;
+    color: #fff;
+} */
+
+.boton-modal label i:hover{
+    color: #fff;
+}
+
+#btn-modal{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(47, 47, 47, 0.8);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.content-modal{
+    width: 500px;
+    max-width: 60%; /* Cambiado para que el pop-up no ocupe toda la pantalla */
+    max-height: 100%; /* Agregado para limitar la altura */
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.content-modal h4{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label,
+.btn-modal label{
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #f1f2f5;
+}
+
+.formulario {
+    display: grid;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 30x;
+    background-color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px
+}
+
+input,
+select{
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+button {
+    width: 60%;
+    height: 45px;
+    padding: 0px 15px;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: #0050f5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Color del hover */
+}
+
+label{
+    margin: 5px 2px;
+}
+
+.footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    margin-top: 20px;
+    border-color: #fbfffb;
+
+}
+
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.footer .icons div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-modal .logo-repair{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-repair img{
+    width: 180px;
+    overflow: hidden;
+}
+
+hr{
+    margin: 25px 20px;
+}
+
+h6{
+    font-size: 15px;
+    color: #999797;
+    font-weight: lighter;
+}
+
+.footer .icons div img{
+    width: 20px;
+}
+
+/* Agrega una clase para la animación de entrada */
+.container-modal.fade-in {
+    animation: fadeInModal 10s ease;
+}
+
+/* Define una clase para la animación */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la clase de animación cuando el checkbox está marcado */
+#btn-modal:checked ~ .container-modal {
+    display: flex;
+    animation: fadeInModal 0.5s ease;
+}
+

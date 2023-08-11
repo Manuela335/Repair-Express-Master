@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../singin/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sing In</title>
+</head>
+<body>
+    <!-- Boton -->
+    <div class="boton-modal">
+        <label for="btn-modal">
+            Abrir Modal
+        </label>
+    </div>
+    <!-- FIn del boton -->
+    <!-- Ventana modal -->
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                <label for="btn-modal"><i class='bx bx-exit' style='color:#080808'  ></i></label>
+            </div>
+            <div class="logo-repair"><img src="images/RepairExpress_ResourcesStudents/LogoNegro.png" alt=""></div>
+            <div><h4>Por favor ingresa los siguientes datos personales</h3></div>
+            <div>
+                <form class="formulario" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="number-id">Correo Electrónico (Este será tu Repair Express ID):</label>
+                        <input type="email" id="email-id" name="email-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="password" minlength="8" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Repetir Contraseña:</label>
+                        <input type="password" id="pass-confir" name="password-confir" minlength="8" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <button><a href="#" class="registrarse">Registrarse</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
